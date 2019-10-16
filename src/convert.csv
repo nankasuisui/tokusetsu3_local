@@ -1,0 +1,256 @@
+#カスタマイズ用記入テンプレート
+#各項目の詳細な説明については
+https://sanographix.github.io/tokusetsu3/docs/customize.html を参照のこと
+
+
+#多分要らない
+tumblrTag,content
+
+#フォント指定
+font:Title,Helvetica Neue
+font:Body,Helvetica Neue
+
+#画像関係
+#背景
+image:Background Image,
+
+#必須 1800*1000px推奨
+image:Header Image,
+
+#サークルロゴ
+image:Circle Logo,
+text:01 l Circle Logo Width,
+
+#必須 横900px以上推奨
+image:Jacket,
+
+#透過png推奨
+image:Title Logo,
+text:01 l Header Title Width,
+
+#バナー
+image:Banner,
+
+#シェア時に表示される画像 1200*630px推奨
+image:Og Image,
+
+#透過png推奨
+image:02 l Introduction Heading Image,
+text:02 l Introduction Heading Image Width,
+
+#フッター画像
+image:06 l Footer Additional Image,
+
+color:Accent,#ed1c24
+
+#有効:1 無効:0で記入
+if:00 l Enable Dark Mode,1
+
+#スラッシュ区切りの中から一つ選択して記入
+select:Header Title Logo Position,top/middle/bottom
+select:Global Header Color,transparent/dark/light/accent
+
+#有効:1 無効:0で記入
+if:01 l Enable Share Buttons,1
+if:06 l Footer Additional Content,0 
+
+text:Book Mode l Book Sample Heading,SAMPLE 
+image:Book Mode l Sample Image 01,
+image:Book Mode l Sample Image 02,
+image:Book Mode l Sample Image 03,
+image:Book Mode l Sample Image 04,
+image:Book Mode l Sample Image 05,
+image:Book Mode l Sample Image 06,
+
+text:02 l Introduction,
+text:02 l Introduction Heading,INTRODUCTION 
+
+text:03 l Circle Name,
+text:03 l Circle URL,
+text:03 l Spec,
+text:03 l Release Date,
+text:03 l Booth Number,
+text:03 l Price,
+
+text:03 l Store01 Name,
+text:03 l Store01 URL,
+text:03 l Store02 Name,
+text:03 l Store02 URL,
+text:03 l Store03 Name,
+text:03 l Store03 URL,
+text:03 l Store Buttons Heading,AVAILABLE NOW 
+
+#youtube.com/embed/<<ここの文字列>>
+text:04 l Youtube Embed Code,
+#api.soundcloud.com/tracks/<<ここの9桁くらいの数字>>
+text:04 l Soundcloud Embed Code,
+#<<sm******>>←この文字列
+text:04 l Nicovideo Embed Code,
+
+text:05 l Track01 Title,
+text:05 l Track01 Description,
+text:05 l Track02 Title,
+text:05 l Track02 Description,
+text:05 l Track03 Title,
+text:05 l Track03 Description,
+text:05 l Track04 Title,
+text:05 l Track04 Description,
+text:05 l Track05 Title,
+text:05 l Track05 Description,
+text:05 l Track06 Title,
+text:05 l Track06 Description,
+text:05 l Track07 Title,
+text:05 l Track07 Description,
+text:05 l Track08 Title,
+text:05 l Track08 Description,
+text:05 l Track09 Title,
+text:05 l Track09 Description,
+text:05 l Track10 Title,
+text:05 l Track10 Description,
+
+#以下不要であれば削除してもOK
+text:05 l Track11 Title,
+text:05 l Track11 Description,
+text:05 l Track12 Title,
+text:05 l Track12 Description,
+text:05 l Track13 Title,
+text:05 l Track13 Description,
+text:05 l Track14 Title,
+text:05 l Track14 Description,
+text:05 l Track15 Title,
+text:05 l Track15 Description,
+text:05 l Track16 Title,
+text:05 l Track16 Description,
+text:05 l Track17 Title,
+text:05 l Track17 Description,
+text:05 l Track18 Title,
+text:05 l Track18 Description,
+text:05 l Track19 Title,
+text:05 l Track19 Description,
+text:05 l Track20 Title,
+text:05 l Track20 Description,
+
+text:05 l Track21 Title,
+text:05 l Track21 Description,
+text:05 l Track22 Title,
+text:05 l Track22 Description,
+text:05 l Track23 Title,
+text:05 l Track23 Description,
+text:05 l Track24 Title,
+text:05 l Track24 Description,
+text:05 l Track25 Title,
+text:05 l Track25 Description,
+text:05 l Track26 Title,
+text:05 l Track26 Description,
+text:05 l Track27 Title,
+text:05 l Track27 Description,
+text:05 l Track28 Title,
+text:05 l Track28 Description,
+text:05 l Track29 Title,
+text:05 l Track29 Description,
+text:05 l Track30 Title,
+text:05 l Track30 Description,
+
+text:05 l Track31 Title,
+text:05 l Track31 Description,
+text:05 l Track32 Title,
+text:05 l Track32 Description,
+text:05 l Track33 Title,
+text:05 l Track33 Description,
+text:05 l Track34 Title,
+text:05 l Track34 Description,
+text:05 l Track35 Title,
+text:05 l Track35 Description,
+text:05 l Track36 Title,
+text:05 l Track36 Description,
+text:05 l Track37 Title,
+text:05 l Track37 Description,
+text:05 l Track38 Title,
+text:05 l Track38 Description,
+text:05 l Track39 Title,
+text:05 l Track39 Description,
+text:05 l Track40 Title,
+text:05 l Track40 Description,
+#削除可ここまで
+
+text:06 l Footer Additional Heading,
+text:06 l Footer Additional Text,
+
+text:07 l Staff01 Name,
+text:07 l Staff01 Role,
+text:07 l Staff01 URL,
+text:07 l Staff02 Name,
+text:07 l Staff02 Role,
+text:07 l Staff02 URL,
+text:07 l Staff03 Name,
+text:07 l Staff03 Role,
+text:07 l Staff03 URL,
+text:07 l Staff04 Name,
+text:07 l Staff04 Role,
+text:07 l Staff04 URL,
+text:07 l Staff05 Name,
+text:07 l Staff05 Role,
+text:07 l Staff05 URL,
+
+#以下不要であれば削除してもOK
+text:07 l Staff06 Name,
+text:07 l Staff06 Role,
+text:07 l Staff06 URL,
+text:07 l Staff07 Name,
+text:07 l Staff07 Role,
+text:07 l Staff07 URL,
+text:07 l Staff08 Name,
+text:07 l Staff08 Role,
+text:07 l Staff08 URL,
+text:07 l Staff09 Name,
+text:07 l Staff09 Role,
+text:07 l Staff09 URL,
+text:07 l Staff10 Name,
+text:07 l Staff10 Role,
+text:07 l Staff10 URL,
+
+text:07 l Staff11 Name,
+text:07 l Staff11 Role,
+text:07 l Staff11 URL,
+text:07 l Staff12 Name,
+text:07 l Staff12 Role,
+text:07 l Staff12 URL,
+text:07 l Staff13 Name,
+text:07 l Staff13 Role,
+text:07 l Staff13 URL,
+text:07 l Staff14 Name,
+text:07 l Staff14 Role,
+text:07 l Staff14 URL,
+text:07 l Staff15 Name,
+text:07 l Staff15 Role,
+text:07 l Staff15 URL,
+
+text:07 l Staff16 Name,
+text:07 l Staff16 Role,
+text:07 l Staff16 URL,
+text:07 l Staff17 Name,
+text:07 l Staff17 Role,
+text:07 l Staff17 URL,
+text:07 l Staff18 Name,
+text:07 l Staff18 Role,
+text:07 l Staff18 URL,
+text:07 l Staff19 Name,
+text:07 l Staff19 Role,
+text:07 l Staff19 URL,
+text:07 l Staff20 Name,
+text:07 l Staff20 Role,
+text:07 l Staff20 URL,
+#削除可ここまで
+
+text:08 l Footer Text,
+
+#作品タイトル(2行とも同じ物を記入)
+Title,
+title,
+#特設ページURL(設置した場所を絶対パスで記入)
+BlogURL,
+
+#アイコン 32x32px推奨 .ico推奨(.png/.gif等でも可)
+Favicon,
+
+CopyrightYears,
