@@ -1,6 +1,6 @@
 # tokusetsu3_local
 
-Tumblrテンプレート「Tokusetsu 3((c)2016 SANOGRAPHIX)」 https://sanographix.github.io/tokusetsu3/ を自サーバーに置けるようにするためのプログラム.
+Tumblrテンプレート「Tokusetsu 3((c)2016 SANOGRAPHIX)」 https://sanographix.github.io/tokusetsu3/ を利用したサイトを自サーバーに置けるような形で作成するためのプログラム.
 
 「Tokusetsu 3」repository: https://github.com/sanographix/tokusetsu3 
 
@@ -10,6 +10,8 @@ LICENSE 参照
 
 # usage
 1. tokusetsu3_local.py(もしくは.exe)を1度実行
+
+    /exeの場合初回起動時にエラーが出るがエラーではない(exit()で途中終了を書いたため)
 
 2. input/convert.csvが生成されるので情報を記入
 
