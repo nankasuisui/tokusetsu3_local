@@ -34,10 +34,6 @@ image:Banner,
 #シェア時に表示される画像 1200*630px推奨
 image:Og Image,
 
-#透過png推奨
-image:02 l Introduction Heading Image,
-text:02 l Introduction Heading Image Width,
-
 #フッター画像
 image:06 l Footer Additional Image,
 
@@ -64,6 +60,9 @@ image:Book Mode l Sample Image 06,
 
 text:02 l Introduction,
 text:02 l Introduction Heading,INTRODUCTION 
+#透過png推奨
+image:02 l Introduction Heading Image,
+text:02 l Introduction Heading Image Width,
 
 text:03 l Circle Name,
 text:03 l Circle URL,
@@ -247,10 +246,11 @@ text:08 l Footer Text,
 #作品タイトル(2行とも同じ物を記入)
 Title,
 title,
-#特設ページURL(設置した場所を絶対パスで記入)
+#特設ページURL(設置したディレクトリを絶対パスで記入 末尾はスラッシュで終えること(og imageを正常に表示するため)
+#記入例:https://nankasuisui.github.io/tripxxx/)
 BlogURL,
 
-#アイコン 32x32px推奨 .ico推奨(.png/.gif等でも可)
+#アイコン 32x32px推奨 .icoファイル
 Favicon,
 
 CopyrightYears,

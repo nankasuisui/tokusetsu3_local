@@ -23,12 +23,12 @@
     <meta property="og:url" content="{BlogURL}" />
   <meta name="twitter:card" content="summary_large_image">
   {block:IfOgImageImage}
-    <meta name="twitter:image:src" content="{image:Og Image}">
-    <meta property="og:image" content="{image:Og Image}" />
+    <meta name="twitter:image:src" content="{BlogURL}{image:Og Image}">
+    <meta property="og:image" content="{BlogURL}{image:Og Image}" />
   {/block:IfOgImageImage}
   {block:IfNotOgImageImage}
-    <meta name="twitter:image:src" content="{image:Header Image}">
-    <meta property="og:image" content="{image:Header Image}" />
+    <meta name="twitter:image:src" content="{BlogURL}{image:Header Image}">
+    <meta property="og:image" content="{BlogURL}{image:Header Image}" />
   {/block:IfNotOgImageImage}
 
   {block:IfNot00lEnableDarkMode}

@@ -74,28 +74,33 @@ userinput = userinput_tmp
 
 #%%
 #IfBlockの判定
+#最初に0で初期化しといた方がいい
 ifrule_tmp = []
+tmp_flag = 0
 for rule in ifrule:
     matchOB = re.search("{block:If(?!Not)(.*)}",rule[0])
     if matchOB:
+        tmp_flag = 0
         for usrinput in userinput:
             if (len(usrinput) != 0) and re.search(matchOB.group(1) if len(rule) == 2 else rule[2],usrinput[0].replace(' ','')):
                 if usrinput[1] != "":
-                    ifrule_tmp.append([rule[0],1])
-                    break
-                else:
-                    ifrule_tmp.append([rule[0],0])
+                    tmp_flag = 1
+                break
+
+        ifrule_tmp.append([rule[0],tmp_flag])
+        continue
 
     else:
         matchOB = re.search("{block:IfNot(.*)}",rule[0])
         if matchOB:
+            tmp_flag = 1
             for usrinput in userinput:
                 if (len(usrinput) != 0) and re.search(matchOB.group(1) if len(rule) == 2 else rule[2],usrinput[0].replace(' ','')):
                     if usrinput[1] != "":
-                        ifrule_tmp.append([rule[0],0])
-                        break
-                    else:
-                        ifrule_tmp.append([rule[0],1])
+                        tmp_flag = 0
+
+            ifrule_tmp.append([rule[0],tmp_flag])
+            continue
     
     if ifrule_tmp != [] and ifrule_tmp[-1][0] != rule[0]:
         print("exception:",rule[0])
