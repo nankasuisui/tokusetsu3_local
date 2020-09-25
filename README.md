@@ -9,9 +9,7 @@ MIT
 LICENSE 参照
 
 # usage
-1. tokusetsu3_local.py(もしくは.exe)を1度実行
-
-    /exeの場合初回起動時にエラーが出るがエラーではない(exit()で途中終了を書いたため)
+1. tokusetsu3_local.pyを1度実行
 
 2. input/convert.csvが生成されるので情報を記入
 
@@ -19,6 +17,6 @@ LICENSE 参照
 
 3. dest/assets/imgに使用する画像ファイルを配置
 
-4. もう一度tokusetsu3_local.py(もしくは.exe)を実行
+4. もう一度tokusetsu3_local.pyを実行
 
-5. dest以下を任意の場所に設置
+5. dest以下を任意のサーバーに設置
