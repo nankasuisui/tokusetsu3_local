@@ -3,28 +3,55 @@
 https://sanographix.github.io/tokusetsu3/docs/customize.html を参照のこと
 
 
-#多分要らない
-tumblrTag,content
+#作品タイトル(2行とも同じ物を記入)
+Title,
+title,
+#特設ページURL(設置したディレクトリを絶対パスで記入 末尾はスラッシュで終えること(og imageを正常に表示するため)
+#記入例:https://nankasuisui.github.io/tripxxx/
+BlogURL,
 
+#アイコン 32x32px推奨 .icoファイル
+Favicon,
+
+#制作年
+CopyrightYears,
+
+
+#色/フォント/装飾
+color:Accent,#ed1c24
 #フォント指定
 font:Title,Helvetica Neue
 font:Body,Helvetica Neue
+
+#ダークモード 有効:1 無効:0で記入
+if:00 l Enable Dark Mode,1
+
+#ヘッダーロゴポジション/色 スラッシュ区切りの中から一つ選択して記入
+select:Header Title Logo Position,top/middle/bottom
+select:Global Header Color,transparent/dark/light/accent
+
+#有効:1 無効:0で記入
+#共有ボタン
+if:01 l Enable Share Buttons,1
+#フッター追加コンテンツ
+if:06 l Footer Additional Content,0 
+
 
 #画像関係
 #背景
 image:Background Image,
 
-#必須 1800*1000px推奨
+#必須 ヘッダーイメージ 1800*1000px推奨
 image:Header Image,
 
 #サークルロゴ
 image:Circle Logo,
 text:01 l Circle Logo Width,
 
-#必須 横900px以上推奨
+#必須 ジャケットイメージ 横900px以上推奨
 image:Jacket,
 
-#透過png推奨
+#作品タイトルロゴ 透過png推奨
 image:Title Logo,
 text:01 l Header Title Width,
 
@@ -32,53 +59,56 @@ text:01 l Header Title Width,
 image:Banner,
 
 #シェア時に表示される画像 1200*630px推奨
+#https://cards-dev.twitter.com/validatorで表示を確認することを推奨
 image:Og Image,
 
 #フッター画像
 image:06 l Footer Additional Image,
 
-color:Accent,#ed1c24
-
-#有効:1 無効:0で記入
-if:00 l Enable Dark Mode,1
-
-#スラッシュ区切りの中から一つ選択して記入
-select:Header Title Logo Position,top/middle/bottom
-select:Global Header Color,transparent/dark/light/accent
-
-#有効:1 無効:0で記入
-if:01 l Enable Share Buttons,1
-if:06 l Footer Additional Content,0 
-
-text:Book Mode l Book Sample Heading,SAMPLE 
-image:Book Mode l Sample Image 01,
-image:Book Mode l Sample Image 02,
-image:Book Mode l Sample Image 03,
-image:Book Mode l Sample Image 04,
-image:Book Mode l Sample Image 05,
-image:Book Mode l Sample Image 06,
-
+#作品情報
 text:02 l Introduction,
 text:02 l Introduction Heading,INTRODUCTION 
 #透過png推奨
 image:02 l Introduction Heading Image,
 text:02 l Introduction Heading Image Width,
 
+#サークル名
 text:03 l Circle Name,
+#サークルURL
 text:03 l Circle URL,
+#仕様
 text:03 l Spec,
+#発売日
 text:03 l Release Date,
+#ブース番号
 text:03 l Booth Number,
+#価格
 text:03 l Price,
 
+#委託/通販情報など　必要な分だけ記入
 text:03 l Store01 Name,
 text:03 l Store01 URL,
 text:03 l Store02 Name,
 text:03 l Store02 URL,
 text:03 l Store03 Name,
 text:03 l Store03 URL,
+text:03 l Store04 Name,
+text:03 l Store04 URL,
+text:03 l Store05 Name,
+text:03 l Store05 URL,
+text:03 l Store06 Name,
+text:03 l Store06 URL,
+text:03 l Store07 Name,
+text:03 l Store07 URL,
+text:03 l Store08 Name,
+text:03 l Store08 URL,
+text:03 l Store09 Name,
+text:03 l Store09 URL,
+text:03 l Store10 Name,
+text:03 l Store10 URL,
 text:03 l Store Buttons Heading,AVAILABLE NOW 
 
+#試聴埋め込み
 #youtube.com/embed/<<ここの文字列>>
 text:04 l Youtube Embed Code,
 #api.soundcloud.com/tracks/<<ここの9桁くらいの数字>>
@@ -86,6 +116,7 @@ text:04 l Soundcloud Embed Code,
 #<<sm******>>←この文字列
 text:04 l Nicovideo Embed Code,
 
+#トラックリスト 必要な分だけ記入
 text:05 l Track01 Title,
 text:05 l Track01 Description,
 text:05 l Track02 Title,
@@ -107,7 +138,6 @@ text:05 l Track09 Description,
 text:05 l Track10 Title,
 text:05 l Track10 Description,
 
-#以下不要であれば削除してもOK
 text:05 l Track11 Title,
 text:05 l Track11 Description,
 text:05 l Track12 Title,
@@ -170,11 +200,11 @@ text:05 l Track39 Title,
 text:05 l Track39 Description,
 text:05 l Track40 Title,
 text:05 l Track40 Description,
-#削除可ここまで
 
 text:06 l Footer Additional Heading,
 text:06 l Footer Additional Text,
 
+#スタッフ 必要な分だけ記入
 text:07 l Staff01 Name,
 text:07 l Staff01 Role,
 text:07 l Staff01 URL,
@@ -191,7 +221,6 @@ text:07 l Staff05 Name,
 text:07 l Staff05 Role,
 text:07 l Staff05 URL,
 
-#以下不要であれば削除してもOK
 text:07 l Staff06 Name,
 text:07 l Staff06 Role,
 text:07 l Staff06 URL,
@@ -239,18 +268,17 @@ text:07 l Staff19 URL,
 text:07 l Staff20 Name,
 text:07 l Staff20 Role,
 text:07 l Staff20 URL,
-#削除可ここまで
 
 text:08 l Footer Text,
 
-#作品タイトル(2行とも同じ物を記入)
-Title,
-title,
-#特設ページURL(設置したディレクトリを絶対パスで記入 末尾はスラッシュで終えること(og imageを正常に表示するため)
-#記入例:https://nankasuisui.github.io/tripxxx/)
-BlogURL,
+#多分要らない
+tumblrTag,content
 
-#アイコン 32x32px推奨 .icoファイル
-Favicon,
-
-CopyrightYears,
+#BookMode用
+text:Book Mode l Book Sample Heading,SAMPLE 
+image:Book Mode l Sample Image 01,
+image:Book Mode l Sample Image 02,
+image:Book Mode l Sample Image 03,
+image:Book Mode l Sample Image 04,
+image:Book Mode l Sample Image 05,
+image:Book Mode l Sample Image 06,
