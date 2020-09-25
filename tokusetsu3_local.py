@@ -54,7 +54,7 @@ with open(usercsv_path,encoding='utf-8') as f:
 #ifrule読み込み
 with open(ifrule_path,encoding='utf-8') as f:
     reader = csv.reader(f)
-    ifrule = [row for row in reader if len(row) == 2]
+    ifrule = [row for row in reader if len(row) >= 2]
 
 
 #%%
