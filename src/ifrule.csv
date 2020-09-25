@@ -19,6 +19,13 @@
 {block:If03lStore01Name},
 {block:If03lStore02Name},
 {block:If03lStore03Name},
+{block:If03lStore04Name},
+{block:If03lStore05Name},
+{block:If03lStore06Name},
+{block:If03lStore07Name},
+{block:If03lStore08Name},
+{block:If03lStore09Name},
+{block:If03lStore10Name},
 {block:IfBookModelSampleImage01Image},,SampleImage01
 {block:IfBookModelSampleImage02Image},,SampleImage02
 {block:IfBookModelSampleImage03Image},,SampleImage03

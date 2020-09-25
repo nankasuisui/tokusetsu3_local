@@ -74,7 +74,7 @@ userinput = userinput_tmp
 
 #%%
 #IfBlockの判定
-#最初に0で初期化しといた方がいい
+#最初に0で初期化
 ifrule_tmp = []
 tmp_flag = 0
 for rule in ifrule:
