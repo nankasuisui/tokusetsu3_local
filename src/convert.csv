@@ -1,7 +1,11 @@
 #カスタマイズ用記入テンプレート
 #各項目の詳細な説明については
-https://sanographix.github.io/tokusetsu3/docs/customize.html を参照のこと
+https://sanographix.github.io/tokusetsu3/docs/customize.html を参照
 
+#「,」を含む文字列を記入する場合は""で囲む
+#例 作品タイトルが「1,2,3」の場合：Title:"1,2,3"
+
+#「"」が入る場合は想定していないので、もし使う場合は全角で使うなり出力物を自力で書き換えるなりで対応をお願いします
 
 #作品タイトル(2行とも同じ物を記入)
 Title,
@@ -20,8 +24,9 @@ CopyrightYears,
 #色/フォント/装飾
 color:Accent,#ed1c24
 #フォント指定
-font:Title,Helvetica Neue
-font:Body,Helvetica Neue
+#font-familyに置換されます、よく分からない場合はそのまま置いておいてください
+font:Title,"'Helvetica Neue', Arial, Helvetica, sans-serif"
+font:Body,"'Helvetica Neue', Arial, Helvetica, sans-serif"
 
 #ダークモード 有効:1 無効:0で記入
 if:00 l Enable Dark Mode,1
