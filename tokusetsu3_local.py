@@ -58,14 +58,14 @@ with open(ifrule_path,encoding='utf-8') as f:
 
 
 #%%
-#userinput内の画像系の指定についてディレクトリ情報を追加
+#ファイル名のみの場合userinput内の画像系の指定についてディレクトリ情報を追加
 #また¥(JIS),\を/に置換
 userinput_tmp = []
 for usrinput in userinput:
     usrinput_tmp = [usrinput[0],usrinput[1].replace("\\",'/')]
     if re.search("image:",usrinput_tmp[0]) or re.search("Favicon",usrinput_tmp[0]):
         if usrinput_tmp[1] != "":
-            if not re.search("assets/img",usrinput_tmp[1]):
+            if not re.search("/",usrinput_tmp[1]):
                 userinput_tmp.append([usrinput_tmp[0],"assets/img/"+usrinput_tmp[1]])
                 continue
     userinput_tmp.append(usrinput_tmp)
