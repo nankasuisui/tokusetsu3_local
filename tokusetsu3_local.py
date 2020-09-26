@@ -22,17 +22,6 @@ usercsv_path = input_path+'/'+"convert.csv"
 out_html_path = dest_path+'/'+"index.html"
 
 #%%
-#assetsフォルダ(imgフォルダ),stylesheetをdestフォルダに配置
-if not os.path.exists(dest_path):
-    os.mkdir(dest_path)
-if not os.path.exists(assets_dest_path):
-    os.mkdir(assets_dest_path)
-if not os.path.exists(assets_dest_path+"/img"):
-    os.mkdir(assets_dest_path+"/img")
-for f in ["/scripts.js","/style-dark.css","/style-light.css"]:
-    if not os.path.exists(assets_dest_path+f):
-        shutil.copyfile(assets_src_path+f,assets_dest_path+f)
-
 #input/convert.csvが存在しない場合は該当ディレクトリにsrcのテンプレートを複製し編集を促し終了
 if not os.path.exists(input_path):
     os.mkdir(input_path)
@@ -131,6 +120,17 @@ for patterns in userinput:
 index_template = '\n'.join(filter(lambda x: x.strip(), index_template.split('\n')))
 
 #%%
+#assetsフォルダ(imgフォルダ),stylesheetをdestフォルダに配置
+if not os.path.exists(dest_path):
+    os.mkdir(dest_path)
+if not os.path.exists(assets_dest_path):
+    os.mkdir(assets_dest_path)
+if not os.path.exists(assets_dest_path+"/img"):
+    os.mkdir(assets_dest_path+"/img")
+for f in ["/scripts.js","/style-dark.css","/style-light.css"]:
+    #srcのcssでdestを上書き　if not os.path.exists(assets_dest_path+f):
+    shutil.copyfile(assets_src_path+f,assets_dest_path+f)
+
 #outフォルダに最終的なファイルを出力
 with open(out_html_path,'w',encoding='utf-8') as f:
     f.write(index_template)
