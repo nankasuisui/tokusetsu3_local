@@ -1,5 +1,8 @@
 # tokusetsu3_local
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nankasuisui/tokusetsu3_local/blob/main/tokusetsu_local.ipynb
+)
+
 Tumblrテンプレート「Tokusetsu 3((c)2016 SANOGRAPHIX)」 https://sanographix.github.io/tokusetsu3/ を利用したサイトを自サーバーに置けるような形で作成するためのプログラム.
 
 「Tokusetsu 3」repository: https://github.com/sanographix/tokusetsu3 
